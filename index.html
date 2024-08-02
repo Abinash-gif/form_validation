@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form to Table</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+<img src="" alt="">
+<div class="container">
+  <div class="form-container">
+    <h2>Submit Your Data</h2>
+    <form id="dataForm">
+      <div class="form-group">
+        <label for="textField">Text Field:</label>
+        <input type="text" class="form-control" id="textField" name="textField" required>
+      </div>
+      <div class="form-group">
+        <label>Radio Options:</label><br>
+        <input type="radio" id="radio1" name="radioOption" value="Option 1" required>
+        <label for="radio1">Option 1</label><br>
+        <input type="radio" id="radio2" name="radioOption" value="Option 2">
+        <label for="radio2">Option 2</label>
+      </div>
+      <div class="form-group">
+        <label>Checkbox Options:</label><br>
+        <input type="checkbox" id="checkbox1" name="checkboxOptions" value="Option A">
+        <label for="checkbox1">Option A</label><br>
+        <input type="checkbox" id="checkbox2" name="checkboxOptions" value="Option B">
+        <label for="checkbox2">Option B</label>
+      </div>
+      <div class="form-group">
+        <label for="fileUpload">Upload File:</label>
+        <input type="file" class="form-control-file" id="fileUpload" name="fileUpload">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <div class="table-container">
+    <h2>Submitted Data</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Text Field</th>
+          <th>Radio Option</th>
+          <th>Checkbox Options</th>
+          <th>File Name</th>
+        </tr>
+      </thead>
+      <tbody id="dataTable">
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</body>
+</html>
